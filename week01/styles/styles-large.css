@@ -1,0 +1,25 @@
+@media only screen and (min-width: 38rem) {
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navigation a {
+        border: none;
+    }
+}
