@@ -1,0 +1,53 @@
+@media only screen and (min-width: 38rem) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        background-color: var(--dusty-olive);
+    }
+
+    .navigation ul {
+        display: flex;
+
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    ul li {
+        padding: 0;
+    }
+
+    .navigation a {
+        margin-right: 20px;
+    }
+
+    .sectionGrid {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 15px;
+    }
+
+    #aboutMe {
+        display: block;
+        height: 440px;
+    }
+
+    #courseDisplay {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        margin: .5rem 0;
+
+    }
+
+    .courseButtons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        
+    }
+}

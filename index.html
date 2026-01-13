@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="author" content="DANIEL KALU">
+    <meta name="description"
+        content="This is the site home page leading to my final project which is used to show core understanding of building a responsive web page">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:;base64,=">
+</head>
+
+<body>
+    <header>
+        <img src="images/brilliance.svg" alt="House Logo" width="512" height="512">
+        <span>Danny's Chamber Home Page</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+
+        </ul>
+    </nav>
+    <main>
+
+        <h1>Home</h1>
+        <div class="sectionGrid">
+            <section>
+                <h2>About Me</h2>
+                <div class="sectionBody" id="aboutMe">
+                    <p>Hey! I am Daniel Kalu and I am from Nigeria. I am currently a student
+                        of BYU Idaho and I am studying Computer Programming and Web Development.
+                        I have a strong passion for my course and have set out goals to achieve maximum success.
+                        Apart from my studies in BYU, I love learning new languages in the Duolingo app. I have an
+                        intermediate langugae skill in Spanish and French and I hope to become fluent in them.
+                        I am a lover of languages and I hope to make the best out of my chosen career field.
+                        You can reach out to me whenever, as I would be glad to make new connections. Warm regards!
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <div class="sectionBody">
+                    <div class="imgContainer">
+                        <img src="images/my-photo.jpg" alt="My photo" width="250" height="400">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="courseButtons">
+                <a href="#" id="all">All </a>
+                <a href="#" id="wdd">WDD</a>
+                <a href="#" id="cse">CSE</a>
+            </div>
+            <div id="courseDisplay"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="mediaLinks">
+            <a href="https://github.com/thetechdanny" target="_blank"><img src="images/github.svg" alt="Git Hub Logo"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/dannyyoung3030" target="_blank"><img src="images/linkedin.svg"
+                    alt="Git Hub Logo" width="16" height="16"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dannysamuelyoung@gmail.com" target="_blank"
+                rel="noopener noreferrer"><img src="images/envelope-check.svg" alt="Email" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/facebook.svg" alt="Git Hub Logo" width="16" height="16"></a>
+        </div>
+        <div class="footerText">
+            <p>&copy;<span id="currentYear"></span> ‖ Daniel Kalu - thetechdanny(Github Username) ‖ Nigeria</p>
+            <p><span>Last modification:</span> <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
