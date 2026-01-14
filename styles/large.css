@@ -9,6 +9,10 @@
         background-color: var(--dusty-olive);
     }
 
+    .navigation a {
+        border: none;
+    }
+
     .navigation ul {
         display: flex;
 
