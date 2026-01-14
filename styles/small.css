@@ -76,7 +76,7 @@ ul li {
     color: white;
     display: block;
     padding: .8rem 10px;
-    background-color: rgba(15, 15, 15, 0.801);
+    background-color: rgba(15, 15, 15);
     border-bottom: 1px solid white;
     
 }
