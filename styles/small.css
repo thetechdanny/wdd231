@@ -86,7 +86,8 @@ ul li {
 }
 
 .navigation a.current {
-    background-color: #bbb;
+    background-color: var(--muted-olive-2);
+    color: var(--dusty-olive);
 }
 
 /* MAIN STYLING */
