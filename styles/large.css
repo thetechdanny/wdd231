@@ -6,11 +6,12 @@
 
     .navigation {
         display: block;
-        background-color: var(--dusty-olive);
+        background-color: rgba(15, 15, 15, 0.801)
     }
 
     .navigation a {
         border: none;
+        background: none;
     }
 
     .navigation ul {
@@ -18,7 +19,7 @@
 
         margin: 0;
         padding: 0;
-        border-bottom: 1px solid #ddd;
+
     }
 
     ul li {
@@ -52,6 +53,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
-        
+
     }
 }
