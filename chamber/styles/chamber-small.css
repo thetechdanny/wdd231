@@ -96,7 +96,10 @@ header {
     column-gap: 10px;
     padding: 10px;
     align-items: end;
+}
 
+.heading {
+    text-align: center;
 }
 
 header img {
