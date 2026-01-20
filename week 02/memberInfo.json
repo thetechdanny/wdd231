@@ -1,0 +1,49 @@
+{
+    "family_name": "The Anthonys",
+    "move_in_date": "2023-09-15",
+    "number_of_records": 5,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "first_name": "Anthony",
+            "last_name": "Smith",
+            "age": 50,
+            "gender": "male"
+        },
+
+        {
+            "first_name": "Lisa",
+            "last_name": "Smith",
+            "age": 45,
+            "gender": "female"
+        },
+
+        {
+            "first_name": "Joe",
+            "last_name": "Smith",
+            "age": 27,
+            "gender": "male"
+        },
+
+        {
+            "first_name": "Joey",
+            "last_name": "Smith",
+            "age": 27,
+            "gender": "female"
+        },
+
+        {
+            "first_name": "Brandon",
+            "last_name": "Smith",
+            "age": 24,
+            "gender": "male"
+        },
+
+        {
+            "first_name": "Claire",
+            "last_name": "Smith",
+            "age": 20,
+            "gender": "female"
+        }
+    ]
+}

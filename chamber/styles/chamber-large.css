@@ -1,0 +1,54 @@
+@media only screen and (min-width: 650px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+
+    }
+
+    #darkMode {
+        display: none;
+    }
+
+    .darkmodeButton {
+        margin-right: 20px;
+    }
+
+
+    .navigation ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .navigation li {
+        list-style: none;
+    }
+
+    .navigation a {
+        background: none;
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+    }
+
+    #darkModeButton {
+        display: block;
+    }
+
+    .largeviewGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    header {
+        grid-column: 1/3;
+    }
+}

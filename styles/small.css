@@ -1,6 +1,6 @@
 :root {
-    --muted-olive-2: #97a97cff;
-    --dusty-olive: rgb(45, 70, 6);
+    --muted-olive-2:  rgba(3, 3, 46, 0.3);
+    --dusty-olive: rgb(3, 3, 46);
 }
 
 * {
@@ -76,9 +76,9 @@ ul li {
     color: white;
     display: block;
     padding: .8rem 10px;
-    background-color: rgba(15, 15, 15);
+    background-color: var(--dusty-olive);
     border-bottom: 1px solid white;
-    
+
 }
 
 .navigation a:hover {

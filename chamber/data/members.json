@@ -1,0 +1,73 @@
+{
+    "companies": [
+        {
+            "name": "Google Company",
+            "address": "123 Innovation Drive, Tech City, TC 45678",
+            "phone": "(123) 456-7890",
+            "website": "https://www.google.com",
+            "image": "https://cdn.worldvectorlogo.com/logos/google-1-1.svg",
+            "membershipLevel": "Gold",
+            "networth": "$500,000"
+        }, 
+
+        {
+            "name": "Apple Company",
+            "address": "105 Danny Avenue, Tech World, TC 45378",
+            "phone": "(+234) 704-204-2847",
+            "website": "https://www.apple.com",
+            "image": "https://cdn.worldvectorlogo.com/logos/apple-13.svg",
+            "membershipLevel": "Member",
+            "networth": "$1,000,000"
+        },
+
+        {
+            "name": "Microsoft Company",
+            "address": "123 Innovation Drive, Tech City, TC 45678",
+            "phone": "(123) 456-7890",
+            "website": "https://www.microsoft.com",
+            "image": "https://cdn.worldvectorlogo.com/logos/microsoft-5.svg",
+            "membershipLevel": "Member",
+            "networth": "$500,000"
+        },
+
+        {
+            "name": "Amazon Company",
+            "address": "123 Innovation Drive, Tech City, TC 45678",
+            "phone": "(123) 456-7890",
+            "website": "https://www.amazon.com",
+            "image": "https://cdn.worldvectorlogo.com/logos/logo-amazon.svg",
+            "membershipLevel": "Silver",
+            "networth": "$500,000"
+        },
+
+        {
+            "name": "Facebook (Meta) Company",
+            "address": "123 Innovation Drive, Tech City, TC 45678",
+            "phone": "(123) 456-7890",
+            "website": "https://www.meta.com",
+            "image": "https://cdn.worldvectorlogo.com/logos/facebook-3-2.svg",
+            "membershipLevel": "Gold",
+            "networth": "$500,000"
+        },
+
+        {
+            "name": "Netflix Company",
+            "address": "123 Innovation Drive, Tech City, TC 45678",
+            "phone": "(123) 456-7890",
+            "website": "https://www.netflix.com",
+            "image": "https://cdn.worldvectorlogo.com/logos/netflix-logo-icon.svg",
+            "membershipLevel": "Silver",
+            "networth": "$500,000"
+        },
+
+        {
+            "name": "Tesla Company",
+            "address": "123 Innovation Drive, Tech City, TC 45678",
+            "phone": "(123) 456-7890",
+            "website": "https://www.tesla.com",
+            "image": "https://cdn.worldvectorlogo.com/logos/tesla-motors.svg",
+            "membershipLevel": "Gold",
+            "networth": "$500,000"
+        }
+    ]
+}
