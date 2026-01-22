@@ -49,6 +49,8 @@ const displayCompanies = (companies) => {
         const name = document.createElement("h2");
         const address = document.createElement("p");
         const phone = document.createElement("p");
+        const membershipLevel = document.createElement("p");
+        const networth = document.createElement("p");
         const website = document.createElement("a");
         const logo = document.createElement("img");
 
@@ -62,12 +64,16 @@ const displayCompanies = (companies) => {
         logo.setAttribute("fetchpriority", "high");
         logo.setAttribute("width", "340");
         logo.setAttribute("height", "440");
+        membershipLevel.innerHTML = `Membership Level: ${company.membershipLevel}`;
+        networth.innerHTML = `Networth: ${company.networth}`;
 
         section.appendChild(logo);
         section.appendChild(name);
         section.appendChild(address);
         section.appendChild(phone);
         section.appendChild(website);
+        section.appendChild(membershipLevel);
+        section.appendChild(networth);
 
         companiesDisplay.appendChild(section);
     })

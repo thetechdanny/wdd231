@@ -243,7 +243,7 @@ section.formatCard {
 
 #companiesDisplay.list-view section.formatCard {
     display: grid;
-    grid-template-columns: 80px 2fr 1.5fr 1.2fr 1.2fr;
+    grid-template-columns: 80px 2fr 1.5fr 1.2fr 1.2fr 1.2fr;
     align-items: center;
     gap: 15px;
     padding: 12px 15px;
@@ -270,10 +270,7 @@ section.formatCard {
 
 /* Logo column */
 #companiesDisplay.list-view img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-    margin: 0;
+    display: none;
 }
 
 /* Company name */
