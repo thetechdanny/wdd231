@@ -5,7 +5,7 @@
             "address": "123 Innovation Drive, Tech City, TC 45678",
             "phone": "(123) 456-7890",
             "website": "https://www.google.com",
-            "image": "/chamber/images/google-1-1.svg",
+            "image": "images/google-1-1.svg",
             "membershipLevel": "3 - Gold",
             "networth": "$500,000"
         }, 
@@ -15,7 +15,7 @@
             "address": "105 Danny Avenue, Tech World, TC 45378",
             "phone": "(+234) 704-204-2847",
             "website": "https://www.apple.com",
-            "image": "/chamber/images/apple-13.svg",
+            "image": "images/apple-13.svg",
             "membershipLevel": "1 - Member",
             "networth": "$1,000,000"
         },
@@ -25,7 +25,7 @@
             "address": "123 Innovation Drive, Tech City, TC 45678",
             "phone": "(123) 456-7890",
             "website": "https://www.microsoft.com",
-            "image": "/chamber/images/microsoft-5.svg",
+            "image": "images/microsoft-5.svg",
             "membershipLevel": "1 - Member",
             "networth": "$250,000"
         },
@@ -35,7 +35,7 @@
             "address": "123 Innovation Drive, Tech City, TC 45678",
             "phone": "(123) 456-7890",
             "website": "https://www.amazon.com",
-            "image": "/chamber/images/logo-amazon.svg",
+            "image": "images/logo-amazon.svg",
             "membershipLevel": "2- Silver",
             "networth": "$300,000"
         },
@@ -45,7 +45,7 @@
             "address": "123 Innovation Drive, Tech City, TC 45678",
             "phone": "(123) 456-7890",
             "website": "https://www.meta.com",
-            "image": "/chamber/images/facebook-3-2.svg",
+            "image": "images/facebook-3-2.svg",
             "membershipLevel": "3 = Gold",
             "networth": "$500,000"
         },
@@ -55,7 +55,7 @@
             "address": "123 Innovation Drive, Tech City, TC 45678",
             "phone": "(123) 456-7890",
             "website": "https://www.netflix.com",
-            "image": "/chamber/images/netflix-logo-icon.svg",
+            "image": "images/netflix-logo-icon.svg",
             "membershipLevel": "2 = Silver",
             "networth": "$150,000"
         },
@@ -65,7 +65,7 @@
             "address": "123 Innovation Drive, Tech City, TC 45678",
             "phone": "(123) 456-7890",
             "website": "https://www.tesla.com",
-            "image": "/chamber/images/tesla-motors.svg",
+            "image": "images/tesla-motors.svg",
             "membershipLevel": "3 = Gold",
             "networth": "$100,000"
         }

@@ -4,28 +4,28 @@
             "event": "Birthday Bash",
             "date": "27th May, 2026",
             "venue": "Eko Hotels & Suites, Lagos",
-            "image": "/chamber/images/birthday.jpg"
+            "image": "images/birthday.jpg"
         },
 
         {
             "event": "Company Anniversary",
             "date": "10th June, 2026",
             "venue": "Transcorp Hilton, Abuja",
-            "image": "/chamber/images/anniversary.jpg"
+            "image": "images/anniversary.jpg"
         },
 
         {
             "event": "Homecoming Party",
             "date": "11th May, 2026",
             "venue": "Summer Hill Hotels, Lagos",
-            "image": "/chamber/images/homecoming.jpg"
+            "image": "images/homecoming.jpg"
         },
 
         {
             "event": "Tech Innovation Training",
             "date": "20th July, 2026",
             "venue": "Eko Events Centre, Lagos",
-            "image": "/chamber/images/ai.jpg"
+            "image": "images/ai.jpg"
         }
     ]
 }

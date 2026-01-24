@@ -25,9 +25,6 @@ body.dark-mode .darklogo {
 
 body.dark-mode .sectionBody {
     color: white;
-}
-
-body.dark-mode .sectionBody {
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
@@ -140,7 +137,7 @@ header img {
 .gridView::after {
     content: "";
     display: inline-block;
-    background-image: url("/chamber/images/grid-3x3-gap-fill.svg");
+    background-image: url("../images/grid-3x3-gap-fill.svg");
     width: 25px;
     height: 25px;
     background-size: contain;
@@ -152,7 +149,7 @@ header img {
 .listView::after {
     content: "";
     display: inline-block;
-    background-image: url("/chamber/images/list-task.svg");
+    background-image: url("../images/list-task.svg");
     width: 20px;
     height: 20px;
     background-size: contain;
@@ -181,7 +178,7 @@ header img {
 .darkmodeButton::after {
     content: "";
     display: inline-block;
-    background-image: url("/chamber/images/contrast.svg");
+    background-image: url("../images/contrast.svg");
     width: 25px;
     height: 25px;
     background-size: contain;

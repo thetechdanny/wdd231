@@ -5,21 +5,21 @@
             "address": "123 Innovation Drive, Tech City, TC 45678",
             "phone": "(123) 456-7890",
             "website": "https://www.netflix.com",
-            "image": "/chamber/images/netflix-logo-icon.svg"
+            "image": "images/netflix-logo-icon.svg"
         },
         {
             "name": "Tesla Company",
             "address": "123 Innovation Drive, Tech City, TC 45678",
             "phone": "(123) 456-7890",
             "website": "https://www.tesla.com",
-            "image": "/chamber/images/tesla-motors.svg"
+            "image": "images/tesla-motors.svg"
         },
         {
             "name": "Microsoft Company",
             "address": "123 Innovation Drive, Tech City, TC 45678",
             "phone": "(123) 456-7890",
             "website": "https://www.microsoft.com",
-            "image": "/chamber/images/microsoft-5.svg"
+            "image": "images/microsoft-5.svg"
         }
     ]
 }
