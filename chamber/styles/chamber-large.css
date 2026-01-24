@@ -36,6 +36,8 @@
 
     .navigation a:hover {
         text-decoration: underline;
+        transform: scale(1.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
 
     #darkModeButton {
@@ -51,5 +53,35 @@
 
     header {
         grid-column: 1/3;
+    }
+
+    /* SECTION GRID */
+    .sectionGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        column-gap: .5rem;
+    }
+
+    /* INDEX STYLE */
+
+    .heroText h1 {
+        font-size: 3rem;
+        margin-bottom: .3rem;
+    }
+
+    .heroText p {
+        font-size: 1.2rem;
+    }
+
+    .joinButton {
+        padding: 1.5rem 5rem;
+        background-color: var(--base-color);
+        color: black;
+        font-weight: bold;
+        border: none;
+    }
+
+    .joinButton::after {
+        content: " →";
     }
 }
