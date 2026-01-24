@@ -408,8 +408,9 @@ footer {
     font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-.heroText h1 {
-    font-size: 1.5rem;
+.heroText span {
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: .3rem;
 }
 
@@ -424,6 +425,7 @@ footer {
     font-weight: bold;
     border: none;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .joinButton::after {
