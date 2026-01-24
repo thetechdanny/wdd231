@@ -137,7 +137,7 @@ header img {
 .gridView::after {
     content: "";
     display: inline-block;
-    background-image: url("../images/grid-3x3-gap-fill.svg");
+    background-image: url("images/grid-3x3-gap-fill.svg");
     width: 25px;
     height: 25px;
     background-size: contain;
@@ -149,7 +149,7 @@ header img {
 .listView::after {
     content: "";
     display: inline-block;
-    background-image: url("../images/list-task.svg");
+    background-image: url("images/list-task.svg");
     width: 20px;
     height: 20px;
     background-size: contain;
@@ -326,7 +326,10 @@ section img {
     margin: 10px auto;
     width: 100px;
     height: auto;
+}
 
+.sectionGrid h2 {
+    color: black;
 }
 
 section p,
