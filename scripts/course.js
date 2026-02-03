@@ -80,6 +80,26 @@ const courses = [
 ]
 
 const courseContainer = document.querySelector('#courseDisplay');
+const courseDialog = document.querySelector('#course-details');
+const modalTitle = document.querySelector('#modalTitle');
+const modalCredits = document.querySelector('#modalCredits');
+const modalDescription = document.querySelector('#modalDescription');
+const closeModalBtn = document.querySelector('#closeModal');
+
+closeModalBtn.addEventListener('click', () => {
+    courseDialog.close();
+});
+
+
+function showCourseDetails(course) {
+    modalTitle.textContent = `${course.subject} ${course.number} — ${course.title}`;
+    modalCredits.textContent = course.credits;
+    modalDescription.textContent = course.description;
+
+    courseDialog.showModal();
+}
+
+
 
 function displayCourses(courseArray) {
     courseContainer.innerHTML = "";
@@ -101,11 +121,8 @@ function displayCourses(courseArray) {
         const courseCard = document.createElement('div');
         courseCard.classList.add('courseCard');
 
-
         const courseName = document.createElement("p");
-        const name = course.subject;
-        const code = course.number;
-        courseName.innerHTML = `${name} ${code}`;
+        courseName.textContent = `${course.subject} ${course.number}`;
 
         courseCard.appendChild(courseName);
 
@@ -113,8 +130,11 @@ function displayCourses(courseArray) {
             courseCard.classList.add('true');
         }
 
-        courseContainer.appendChild(courseCard);
+        courseCard.addEventListener('click', () => {
+            showCourseDetails(course);
+        });
 
+        courseContainer.appendChild(courseCard);
     });
 
 }

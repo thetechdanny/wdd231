@@ -1,5 +1,5 @@
 :root {
-    --muted-olive-2:  rgba(3, 3, 46, 0.3);
+    --muted-olive-2: rgba(3, 3, 46, 0.3);
     --dusty-olive: rgb(3, 3, 46);
 }
 
@@ -220,4 +220,24 @@ footer {
 .courseButtons a:hover {
     background-color: var(--muted-olive-2);
     color: white;
+}
+
+dialog {
+    max-width: 500px;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    margin: auto;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#closeModal {
+    float: right;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
 }

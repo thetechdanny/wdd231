@@ -84,4 +84,29 @@
     .joinButton::after {
         content: " →";
     }
+
+    /* JOIN PAGE */
+
+    .joinPageGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #memberships h5 {
+        font-size: 1.5rem;
+    }
+
+    .membershipHeader {
+        text-align: center;
+        margin: 0 0 1rem 0;
+        font-size: 1.5rem;
+    }
+        #displayMessage h2 {
+            font-size: 3rem;
+        }
+    
+    #displayMessage>p {
+    font-size: 1.5rem;
+    text-align: center;
+}
 }
