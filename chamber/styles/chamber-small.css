@@ -621,6 +621,9 @@ input[type=submit] {
     width: fit-content;
     border: none;
     background-color: var(--base-color);
+    transform: scale(1.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
 }
 
 #memberships {
@@ -705,7 +708,7 @@ input[type=submit] {
     background-color: #ffffff;
     color: #000;
 
-  
+
     position: fixed;
     top: 50%;
     left: 50%;
@@ -748,7 +751,7 @@ input[type=submit] {
     border: none;
     border-radius: 6px;
     background-color: var(--base-color);
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
