@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abia Chamber of Commerce Home Page</title>
+    <title>Praktiz Web Development Quiz Home Page</title>
     <meta name="author" content="DANIEL KALU">
-    <meta name="description"
-        content="This home page show cases the Abia Chamber of Commerce company info and other relevant informatin about the company">
-    <meta property="og:title" content="Home Page">
-    <meta property="og:description"
-        content="This home page show cases the Abia Chamber of Commerce company info and other relevant informatin about the company">
+    <meta name="description" content="This website is a practice quiz home page,
+designed to test and enhance your knowledge of web development concepts.">
+    <meta property="og:title" content="Praktiz Web Development Quiz Home Page">
+    <meta property="og:description" content="This website is a practice quiz home page,
+designed to test and enhance your knowledge of web development concepts.">
     <meta property="og:image" content="https://thetechdanny.github.io/wdd231/chamber/employees.svg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="http://127.0.0.1:5500/chamber/index.html">
     <link rel="icon" type="image/x-icon" href="images/employees.svg">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/base-style.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <script src="scripts/base.js" defer></script>
     <script src="scripts/index.js" defer></script>
@@ -30,60 +30,56 @@
     <div class="largeviewGrid">
         <header>
             <img class="darklogo" src="images/employees.svg" alt="Abia Chamber Logo" width="512" height="512">
-            <span>Abia Chamber of Commerce</span>
+            <h3>Praktiz Web Development Quiz</h3>
             <button id="darkMode" class="darkmodeButton" aria-label="Dark Mode Button"></button>
             <button id="hamBtn" class="hamburger" aria-label="Hamburger Menu"></button>
         </header>
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html" class="current">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html" target="_blank">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#" target="_blank">Learn</a></li>
+                <li><a href="#">Feedback</a></li>
             </ul>
             <button id="darkModeButton" class="darkmodeButton" aria-label="Dark Mode Button"></button>
         </nav>
     </div>
     <main>
-        <p class="lastVisit"></p>
-        <div class="hero">
-            <img src="images/hero-small.webp" alt="Abia Chamber of Commerce">
-            <div class="heroText">
-                <div class="heroHeading">
-                    <span>Abia Chamber of Commerce</span>
-                    <p>Bringing you desired services and satisfaction</p>
-                </div>
-                <a href="directory.html" class="joinButton">Explore</button></a>
+        <div class="siteContent">
+            <div class="siteDescription">
+                <h3>Site Name</h3>
+                <ul>
+                    <li>Praktiz Web Development Quiz</li>
+                </ul>
+                <h3>Site Purpose</h3>
+                <ul>
+                    <li>This website is designed to test and enhance your knowledge of web development concepts</li>
+                </ul>
+                <h3>Scenario</h3>
+                <ul>
+                    <li>How do I check my overall score?</li>
+                    <li>Can I cancel the quiz before I submit?</li>
+                    <li>How can I view past questions and answers?</li>
+                    <li>How can I see my best quiz score?</li>
+                    <li>Can I save my score as a document?</li>
+                </ul>
+                <h3>Color Scheme</h3>
+                <p>I'll be using:</p>
+                <ul>
+                    <li> A shade of blue - <strong>rgb(33, 134, 134)</strong> as --base color </li>
+                    <li>A transparent shade of blue - <strong>rgba(33, 134, 134, 0.2)</strong> as --forebackground-color  </li>
+                </ul>
+                <h3>Typography</h3>
+                <ul>
+                    <li>I'll be using <strong>'Amaranth'</strong> for my body text or any <strong>'sans-serif'</strong> equivalent in absence of Amaranth
+                    </li>
+                </ul>
             </div>
-        </div>
-        
-        <h1 class="wayfindingText">Home</h1>
-       
-        <div class="sectionGrid">
-            <section>
-                <h2>Events</h2>
-                <div class="sectionBody" id="events">
-
-                </div>
-            </section>
-            <section>
-                <h2>Current Weather - Today</h2>
-                <div class="sectionBody currentWeatherInfo" id="currentWeather">
-                    <div id="weatherIcon"></div>
-                    <div id="weatherInfo"></div>
-                </div>
-            </section>
-
-            <section>
-                <h2>Weather Forecast - 3 Days</h2>
-                <div class="sectionBody" id="weatherForecast">
-
-                </div>
-            </section>
-        </div>
-        <div class="businessGrid" id="business">
-            
+            <div class="wireframes">
+                <img src="images/mobileview.png" alt="mobileview wireframe">
+                <img src="images/largeview.png" alt="desktopview wireframe">
+            </div>
         </div>
     </main>
     <footer>

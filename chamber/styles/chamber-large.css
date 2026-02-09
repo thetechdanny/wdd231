@@ -1,4 +1,4 @@
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 641px) {
     .hamburger {
         display: none;
     }
@@ -49,6 +49,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         column-gap: 20px;
+        border-bottom: 1px solid var(--forebackground-color);
     }
 
     header {
@@ -101,12 +102,66 @@
         margin: 0 0 1rem 0;
         font-size: 1.5rem;
     }
-        #displayMessage h2 {
-            font-size: 3rem;
-        }
-    
+
+    #displayMessage h2 {
+        font-size: 3rem;
+    }
+
     #displayMessage>p {
-    font-size: 1.5rem;
-    text-align: center;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #discover div {
+        grid-template-areas:
+            "picture name"
+            "picture address"
+            "picture description"
+            "picture button";
+    }
+
+    #discover div h2 {
+        grid-area: name;
+    }
+
+    #discover div img {
+        grid-area: picture;
+        width: 300px;
+        height: auto;
+    }
+
+    #discover div img:hover {
+        animation: tilt 0.8s ease-in-out infinite alternate;
+    }
+
+    @keyframes tilt {
+        from {
+            transform: rotate(-2deg);
+        }
+
+        to {
+            transform: rotate(2deg);
+        }
+    }
+
+    #discover div address {
+        grid-area: address;
+    }
+
+    #discover div p {
+        grid-area: description;
+    }
+
+    #discover div button {
+        grid-area: button;
+    }
+
 }
+
+@media only screen and (min-width: 1024px) {
+    #discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
 }

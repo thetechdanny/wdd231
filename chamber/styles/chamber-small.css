@@ -36,13 +36,15 @@ body.dark-mode section.formatCard {
 }
 
 body.dark-mode .formatEventCard,
-body.dark-mode .formatBusinessCard {
+body.dark-mode .formatBusinessCard,
+body.dark-mode #discover div {
     background-color: #000;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-body.dark-mode section.formatCard a {
+body.dark-mode section.formatCard a,
+body.dark-mode .lastVisit {
     color: white;
 }
 
@@ -229,6 +231,13 @@ header img {
     text-align: center;
     padding: 2rem;
     background-color: var(--forebackground-color);
+}
+
+.lastVisit {
+    text-align: center;
+    color: green;
+    font-size: 1.2rem;
+    margin: 1rem 0;
 }
 
 .directoryBody {
@@ -700,7 +709,8 @@ input[type=submit] {
     margin: 2rem 0 .5rem 0;
 }
 
-#membershipDialog {
+#membershipDialog,
+#placeDialog {
     border: none;
     border-radius: 10px;
     padding: 2rem;
@@ -718,7 +728,8 @@ input[type=submit] {
     animation: modalPop 0.3s ease-out;
 }
 
-#membershipDialog::backdrop {
+#membershipDialog,
+#placeDialog::backdrop {
     background-color: rgba(0, 0, 0, 0.65);
 }
 
@@ -744,7 +755,8 @@ input[type=submit] {
     font-size: 0.95rem;
 }
 
-#closeModal {
+#closeModal,
+#closeDialog {
     margin-top: 1.5rem;
     width: 100%;
     padding: 0.6rem;
@@ -784,4 +796,62 @@ input[type=submit] {
     line-height: 2;
     max-width: 30rem;
     text-wrap: wrap;
+}
+
+/* DISCOVER PAGE */
+
+.discoverPageCard {
+    text-align: center;
+    padding: 10px 15px;
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 2px 2px 2px 2px;
+    margin: 1.5rem auto;
+    max-width: 95%;
+}
+
+#discover div {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "name"
+        "picture"
+        "address"
+        "description"
+        "button";
+}
+
+#discover div h2 {
+    grid-area: name;
+}
+
+#discover div img {
+    grid-area: picture;
+    width: 100%;
+    height: auto;
+}
+
+#discover div address {
+    grid-area: address;
+}
+
+#discover div p {
+    grid-area: description;
+}
+
+#discover div button {
+    display: block;
+    margin: 0 auto;
+    grid-area: button;
+    padding: 1rem 3rem;
+    width: fit-content;
+    border: none;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+#discover div button:hover {
+    background-color: #aaa;
 }

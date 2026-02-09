@@ -1,10 +1,10 @@
 document.querySelector("#lastModified").innerHTML = document.lastModified;
 
-const currentDate = document.querySelector("#currentYear");
+const currentYearElement = document.querySelector("#currentYear");
 
 const year = new Date().getFullYear();
 
-currentDate.innerHTML = year;
+currentYearElement.innerHTML = year;
 
 const hamButton = document.querySelector("#hamBtn");
 const navButton = document.querySelector("#nav-bar");
@@ -29,3 +29,29 @@ window.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("dark-mode");
     }
 });
+
+// Handle last visit display using localStorage
+const lastVisitElement = document.querySelector(".lastVisit");
+const lastVisitDate = localStorage.getItem("lastVisitDate");
+const currentDate = Date.now();
+
+if (!lastVisitDate) {
+    // First visit
+    lastVisitElement.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const timeDifference = currentDate - parseInt(lastVisitDate);
+    const millisecondsPerDay = 86400000; // 24 * 60 * 60 * 1000
+
+    if (timeDifference < millisecondsPerDay) {
+        // Less than a day
+        lastVisitElement.textContent = "Back so soon! Awesome!";
+    } else {
+        // Calculate number of days
+        const daysDifference = Math.floor(timeDifference / millisecondsPerDay);
+        const dayText = daysDifference === 1 ? "day" : "days";
+        lastVisitElement.textContent = `You last visited ${daysDifference} ${dayText} ago.`;
+    }
+}
+
+// Store current visit date
+localStorage.setItem("lastVisitDate", currentDate.toString());
