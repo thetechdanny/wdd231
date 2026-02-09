@@ -19,12 +19,14 @@ places.forEach(place => {
     description.innerHTML = `${place.description}`;
     image.setAttribute("src", `${place.photo}`);
     image.setAttribute("alt", `${place.name}`);
+    image.setAttribute("width", `250px`);
+    image.setAttribute("height", `250px`);
     button.innerHTML = "Learn More";
 
     button.addEventListener("click", () => {
         const placeTitle = document.querySelector("#placeTitle");
         const placeDescription = document.querySelector("#placeDescription");
-        
+
         placeTitle.textContent = place.name;
         placeDescription.textContent = place.description;
 
