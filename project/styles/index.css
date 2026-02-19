@@ -29,8 +29,8 @@
     font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-.heroText span {
-    font-size: 1.2rem;
+.heroText h1 {
+    font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: .3rem;
 }
@@ -93,8 +93,7 @@ ul {
     margin-top: .5rem;
 }
 
-.guidelines ol>li {
+.guidelines ol>li.list {
     font-weight: bold;
-    background-color: var(--forebackground-color);
     padding: .5rem;
 }
