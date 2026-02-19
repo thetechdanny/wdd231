@@ -176,10 +176,6 @@
     border-left: 3px solid #27ae60;
 }
 
-.feedbackItem.incorrect .userAnswer {
-    background-color: #fef5f5;
-    border-left: 3px solid #e74c3c;
-}
 
 .correctAnswer {
     background-color: #f0f9f6;
