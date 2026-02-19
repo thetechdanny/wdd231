@@ -1,0 +1,321 @@
+.feedbackSection {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.feedbackHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.feedbackHeader h2 {
+    color: var(--base-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Summary Statistics */
+.feedbackSummary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.summaryCard {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.summaryCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.summaryCard h3 {
+    color: #666;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.summaryCard p {
+    color: var(--base-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Feedback Container */
+.feedbackContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Feedback Item */
+.feedbackItem {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.feedbackItem.correct {
+    border-left-color: rgb(3, 53, 3);
+    background: linear-gradient(90deg, rgba(39, 174, 96, 0.05) 0%, white 10%);
+}
+
+.feedbackItem.incorrect {
+    border-left-color: rgb(119, 5, 5);
+    background: linear-gradient(90deg, rgba(231, 76, 60, 0.05) 0%, white 10%);
+}
+
+.feedbackItem:hover {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+/* Question Section */
+.questionSection {
+    margin-bottom: 1.5rem;
+}
+
+.questionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.questionNumber {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.statusBadge {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.statusBadge.correct-badge {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.statusBadge.incorrect-badge {
+    background-color: #f8d7da;
+    color: rgb(119, 5, 5);
+}
+
+.questionText {
+    color: black;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Answer Sections */
+.answerSection {
+    margin-bottom: 1rem;
+}
+
+.answerSection:last-child {
+    margin-bottom: 0;
+}
+
+.answerTitle {
+    color: #666;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.answerBox {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.answerBox p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.userAnswer {
+    background-color: #f9f9f9;
+    border-color: #e8e8e8;
+}
+
+.feedbackItem.correct .userAnswer {
+    background-color: #f0f9f6;
+    border-left: 3px solid #27ae60;
+}
+
+.feedbackItem.incorrect .userAnswer {
+    background-color: #fef5f5;
+    border-left: 3px solid #e74c3c;
+}
+
+.correctAnswer {
+    background-color: #f0f9f6;
+    border: 1px solid #27ae60;
+}
+
+.correctAnswer p {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+/* No Data Message */
+.noDataMessage {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.noDataMessage p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Feedback Button (for "View Detailed Feedback") */
+.feedbackBtn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background-color: #3498db;
+    color: white;
+    flex: 1;
+    min-width: 150px;
+}
+
+.feedbackBtn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3);
+}
+
+/* Dark Mode for Feedback */
+body.dark-mode .feedbackItem {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, transparent 10%);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .feedbackItem.correct {
+    border-left-color: green;
+}
+
+body.dark-mode .feedbackItem.incorrect {
+    border-left-color: red;
+}
+
+body.dark-mode .questionText {
+    color: #e0e0e0;
+}
+
+body.dark-mode .answerBox {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .answerBox p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .correctAnswer {
+    background-color: rgba(39, 174, 96, 0.15);
+    border-color: #27ae60;
+}
+
+body.dark-mode .summaryCard {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .summaryCard h3 {
+    color: #b0b0b0;
+}
+
+body.dark-mode .summaryCard p {
+    color: #00d4d4;
+}
+
+body.dark-mode .feedbackBtn {
+    background-color: #3498db;
+}
+
+body.dark-mode .feedbackBtn:hover {
+    background-color: #2980b9;
+}
+
+.feedbackHeader h2 {
+        font-size: 1.8rem;
+    }
+
+    .feedbackSummary {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .summaryCard {
+        padding: 1.5rem;
+    }
+
+    .summaryCard p {
+        font-size: 2rem;
+    }
+
+    .feedbackItem {
+        padding: 1rem;
+    }
+
+    .questionHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .answerTitle {
+        font-size: 0.85rem;
+    }
+
+    .answerBox {
+        padding: 0.75rem;
+    }
+
+    .answerBox p {
+        font-size: 0.95rem;
+    }

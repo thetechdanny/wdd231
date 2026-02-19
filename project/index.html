@@ -16,9 +16,9 @@ designed to test and enhance your knowledge of web development concepts.">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="http://127.0.0.1:5500/chamber/index.html">
     <link rel="icon" type="image/x-icon" href="images/employees.svg">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base-style.css">
-    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/base.js" defer></script>
     <script src="scripts/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,58 +27,64 @@ designed to test and enhance your knowledge of web development concepts.">
 </head>
 
 <body>
-    <div class="largeviewGrid">
-        <header>
-            <img class="darklogo" src="images/employees.svg" alt="Abia Chamber Logo" width="512" height="512">
-            <h3>Praktiz Web Development Quiz</h3>
-            <button id="darkMode" class="darkmodeButton" aria-label="Dark Mode Button"></button>
-            <button id="hamBtn" class="hamburger" aria-label="Hamburger Menu"></button>
-        </header>
-
-        <nav id="nav-bar" class="navigation">
-            <ul>
-                <li><a href="#" class="current">Home</a></li>
-                <li><a href="#">Quiz</a></li>
-                <li><a href="#" target="_blank">Learn</a></li>
-                <li><a href="#">Feedback</a></li>
-            </ul>
-            <button id="darkModeButton" class="darkmodeButton" aria-label="Dark Mode Button"></button>
-        </nav>
-    </div>
     <main>
-        <div class="siteContent">
-            <div class="siteDescription">
-                <h3>Site Name</h3>
-                <ul>
-                    <li>Praktiz Web Development Quiz</li>
-                </ul>
-                <h3>Site Purpose</h3>
-                <ul>
-                    <li>This website is designed to test and enhance your knowledge of web development concepts</li>
-                </ul>
-                <h3>Scenario</h3>
-                <ul>
-                    <li>How do I check my overall score?</li>
-                    <li>Can I cancel the quiz before I submit?</li>
-                    <li>How can I view past questions and answers?</li>
-                    <li>How can I see my best quiz score?</li>
-                    <li>Can I save my score as a document?</li>
-                </ul>
-                <h3>Color Scheme</h3>
-                <p>I'll be using:</p>
-                <ul>
-                    <li> A shade of blue - <strong>rgb(33, 134, 134)</strong> as --base color </li>
-                    <li>A transparent shade of blue - <strong>rgba(33, 134, 134, 0.2)</strong> as --forebackground-color  </li>
-                </ul>
-                <h3>Typography</h3>
-                <ul>
-                    <li>I'll be using <strong>'Amaranth'</strong> for my body text or any <strong>'sans-serif'</strong> equivalent in absence of Amaranth
-                    </li>
-                </ul>
+        <div class="hero">
+            <img src="images/hero-small.webp" alt="Abia Chamber of Commerce">
+            <div class="heroText">
+                <div class="heroHeading">
+                    <span>Praktiz Web Development</span>
+                    <p>Testing your Knowledge of Web Development</p>
+                </div>
+                <form action="quiz.html">
+                    <input type="text" name="name" id="username" placeholder="Type in your Name Here" required>
+                    <button class="startButton">Start Quiz</button>
+                </form>
+
+
             </div>
-            <div class="wireframes">
-                <img src="images/mobileview.png" alt="mobileview wireframe">
-                <img src="images/largeview.png" alt="desktopview wireframe">
+        </div>
+        <div class="welcomeText">
+            <p>🧠 <strong>Welcome Web Development Quiz</strong><br>
+
+                This quiz is designed to test and improve your understanding of core web technologies including HTML,
+                CSS, and
+                JavaScript. Whether you’re a beginner learning the basics or a student revising for an exam, this quiz
+                will help you
+                measure your progress in a fun and interactive way.
+
+                Good luck — and have fun learning! 🚀</p>
+
+            <div class="guidelines">
+                <h4>Quiz Guidelines:</h4>
+                <p>Please read the instructions below before starting the quiz:</p>
+                <ol>
+                    <li>Start Quiz:</li>
+                    <ul>
+                        <li>Click the Start Quiz button to begin. Once started, the quiz will display one question at a
+                            time.</li>
+                    </ul>
+                    <li>Answering Questions:</li>
+                    <ul>
+                        <li>Read each question carefully.</li>
+                        <li>Select the option you believe is correct.</li>
+                        <li>Only one answer is allowed per question.</li>
+                    </ul>
+                    <li>Navigation:</li>
+                    <ul>
+                        <li>Use the <strong>Next</strong> button to move to the next question</li>
+                        <li>Use the <strong>Previous</strong> button to go back to the previous question</li>
+                    </ul>
+                    <li>Time & Scoring:</li>
+                    <ul>
+                        <li>Some quizzes may be timed. Keep an eye on the timer if available.</li>
+                        <li>Your score will be calculated based on correct answers.</li>
+                    </ul>
+                    <li>Submission</li>
+                    <ul>
+                        <li>The quiz automatically ends when all questions are answered.</li>
+                        <li>Your final score and feedback will be displayed at the end.</li>
+                    </ul>
+                </ol>
             </div>
         </div>
     </main>

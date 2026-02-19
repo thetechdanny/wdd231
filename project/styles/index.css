@@ -1,0 +1,100 @@
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hamburger {
+    display: none;
+}
+
+.heroText {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(244, 244, 250, 0.7);
+}
+
+.heroHeading {
+    padding: 1rem;
+    color: black;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.heroText span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: .3rem;
+}
+
+.heroText p {
+    font-size: .7rem;
+}
+
+#username {
+    padding: .6rem .5rem;
+    margin-bottom: .5rem;
+    width: 15rem;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1rem;
+}
+
+.startButton {
+    display: block;
+    padding: .5rem .7rem;
+    margin: 0 auto;
+    background-color: var(--base-color);
+    color: black;
+    font-weight: bold;
+    border: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.startButton::after {
+    content: " →";
+}
+
+.startButton:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.welcomeText {
+    padding: 1rem;
+    font-size: .8rem;
+    text-align: justify;
+}
+
+.welcomeText>p {
+    border-right: 2px solid var(--base-color);
+    border-left: 2px solid var(--base-color);
+    padding: 0 1rem;
+}
+
+.guidelines {
+    margin: 2rem 1rem 1rem;
+}
+
+.guidelines ol,
+ul {
+    margin-left: 1rem;
+}
+
+.guidelines li {
+    margin-top: .5rem;
+}
+
+.guidelines ol>li {
+    font-weight: bold;
+    background-color: var(--forebackground-color);
+    padding: .5rem;
+}
