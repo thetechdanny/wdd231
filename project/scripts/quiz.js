@@ -45,7 +45,7 @@ let userAnswers = [];
 async function loadQuestions() {
     try {
         const htmlResponse = await fetch("./files/htmlQuizQuestions.json");
-        if (!htmlResponse.ok) throw new Error("Failed to load HTML questions");
+        if (!htmlResponse.ok) throw new Error("Failed to load HTML questions. Cross check the file path");
         htmlquestions = await htmlResponse.json();
     } catch (error) {
         console.error("Error loading HTML questions:", error);
@@ -53,7 +53,7 @@ async function loadQuestions() {
 
     try {
         const cssResponse = await fetch("./files/cssQuizQuestions.json");
-        if (!cssResponse.ok) throw new Error("Failed to load CSS questions");
+        if (!cssResponse.ok) throw new Error("Failed to load CSS questions. Cross check the file path");
         cssquestions = await cssResponse.json();
     } catch (error) {
         console.error("Error loading CSS questions:", error);
@@ -61,7 +61,7 @@ async function loadQuestions() {
 
     try {
         const jsResponse = await fetch("./files/javascriptQuizQuestions.json");
-        if (!jsResponse.ok) throw new Error("Failed to load JavaScript questions");
+        if (!jsResponse.ok) throw new Error("Failed to load JavaScript questions. Cross check the file path");
         javascriptquestions = await jsResponse.json();
     } catch (error) {
         console.error("Error loading JavaScript questions:", error);
