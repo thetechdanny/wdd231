@@ -222,6 +222,24 @@ footer {
     height: 1.5rem;
 }
 
+.videoLink{
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--base-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.videoLink:hover {
+    background-color: #1a7a7a;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(33, 134, 134, 0.3);
+}
+
 /* ACTION BUTTONS */
 .actionButtons {
     display: flex;
